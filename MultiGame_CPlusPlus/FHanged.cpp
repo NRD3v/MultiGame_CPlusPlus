@@ -4,7 +4,7 @@
 
 FHanged::FHanged()
 {
-	TITLE = setTitle("the hanged");
+	TITLE = "the hanged";
 }
 
 FString FHanged::getTitle() const
@@ -191,7 +191,7 @@ void FHanged::guessLetter()
 				{
 					for (int32 j = 0; j < fWord.length(); j++)
 					{
-						if (fGuess[i] == fWord[j])
+						if (fWord[j] == fGuess[i])
 						{
 							fHidden[j] = fGuess[i];
 							validGuess = true;
@@ -250,9 +250,4 @@ FString FHanged::setHidden(FString value)
 		std::replace(value.begin(), value.end(), value[i], '_');
 	}
 	return value;
-}
-
-FString FHanged::setTitle(FString value)
-{
-	return TITLE = value;
 }

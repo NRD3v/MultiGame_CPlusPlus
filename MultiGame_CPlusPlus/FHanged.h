@@ -19,7 +19,6 @@ class FHanged
 
 		// Setters
 		FString setHidden(FString);
-		FString setTitle(FString);
 
 	private:
 		FString TITLE;
